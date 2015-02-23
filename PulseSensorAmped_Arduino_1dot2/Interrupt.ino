@@ -6,26 +6,25 @@ volatile unsigned long sampleCounter = 0;          // used to determine pulse ti
 volatile unsigned long lastBeatTime = 0;           // used to find IBI
 volatile int P =512;                      // used to find peak in pulse wave, seeded
 volatile int T = 512;                     // used to find trough in pulse wave, seeded
-volatile int thresh = 512;                // used to find instant moment of heart beat, seeded
+volatile int thresh = 525;                // used to find instant moment of heart beat, seeded
 volatile int amp = 100;                   // used to hold amplitude of pulse waveform, seeded
 volatile boolean firstBeat = true;        // used to seed rate array so we startup with reasonable BPM
 volatile boolean secondBeat = false;      // used to seed rate array so we startup with reasonable BPM
 
 
 void interruptSetup(){     
-        // Initializes Timer1 to throw an interrupt every 2mS.
-        TCCR1A = 0x00; // DISABLE OUTPUTS AND PWM ON DIGITAL PINS 9 & 10
-        TCCR1B = 0x11; // GO INTO 'PHASE AND FREQUENCY CORRECT' MODE, NO PRESCALER
-        TCCR1C = 0x00; // DON'T FORCE COMPARE
-        TIMSK1 = 0x01; // ENABLE OVERFLOW INTERRUPT (TOIE1)
-        ICR1 = 16000;  // TRIGGER TIMER INTERRUPT EVERY 2mS  
-        sei();         // MAKE SURE GLOBAL INTERRUPTS ARE ENABLED     
-      }
+  // Initializes Timer2 to throw an interrupt every 2mS.
+  TCCR2A = 0x02;     // DISABLE PWM ON DIGITAL PINS 3 AND 11, AND GO INTO CTC MODE
+  TCCR2B = 0x06;     // DON'T FORCE COMPARE, 256 PRESCALER 
+  OCR2A = 0X7C;      // SET THE TOP OF THE COUNT TO 124 FOR 500Hz SAMPLE RATE
+  TIMSK2 = 0x02;     // ENABLE INTERRUPT ON MATCH BETWEEN TIMER2 AND OCR2A
+  sei();             // MAKE SURE GLOBAL INTERRUPTS ARE ENABLED      
+} 
 
 
 // THIS IS THE TIMER 2 INTERRUPT SERVICE ROUTINE. 
 // Timer 2 makes sure that we take a reading every 2 miliseconds
-ISR(TIMER1_OVF_vect){                       // triggered when Timer2 counts to 124
+ISR(TIMER2_COMPA_vect){                         // triggered when Timer2 counts to 124
   cli();                                      // disable interrupts while we do this
   Signal = analogRead(pulsePin);              // read the Pulse Sensor 
   sampleCounter += 2;                         // keep track of the time in mS with this variable

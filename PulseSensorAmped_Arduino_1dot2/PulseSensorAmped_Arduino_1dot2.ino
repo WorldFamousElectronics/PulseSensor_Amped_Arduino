@@ -1,6 +1,6 @@
 
 /*
->> Pulse Sensor Amped 1.1 <<
+>> Pulse Sensor Amped 1.2 <<
 This code is for Pulse Sensor Amped by Joel Murphy and Yury Gitman
     www.pulsesensor.com 
     >>> Pulse Sensor purple wire goes to Analog Pin 0 <<<
@@ -22,11 +22,9 @@ It will also fade an LED on pin fadePin with every beat. Put an LED and series r
 Check here for detailed code walkthrough:
 http://pulsesensor.myshopify.com/pages/pulse-sensor-amped-arduino-v1dot1
 
-Code Version 02 by Joel Murphy & Yury Gitman  Fall 2012
-This update changes the HRV variable name to IBI, which stands for Inter-Beat Interval, for clarity.
-Switched the interrupt to Timer2.  500Hz sample rate, 2mS resolution IBI value.
-Fade LED pin moved to pin 5 (use of Timer2 disables PWM on pins 3 & 11).
-Tidied up inefficiencies since the last version. 
+Code Version 1.2 by Joel Murphy & Yury Gitman  Spring 2013
+This update fixes the firstBeat and secondBeat flag usage so that realistic BPM is reported.
+
 */
 
 
@@ -52,7 +50,7 @@ void setup(){
   interruptSetup();                 // sets up to read Pulse Sensor signal every 2mS 
    // UN-COMMENT THE NEXT LINE IF YOU ARE POWERING The Pulse Sensor AT LOW VOLTAGE, 
    // AND APPLY THAT VOLTAGE TO THE A-REF PIN
-   //analogReference(EXTERNAL);   
+//   analogReference(EXTERNAL);   
 }
 
 
@@ -63,7 +61,7 @@ void loop(){
         fadeRate = 255;                  // Set 'fadeRate' Variable to 255 to fade LED with pulse
         sendDataToProcessing('B',BPM);   // send heart rate with a 'B' prefix
         sendDataToProcessing('Q',IBI);   // send time between beats with a 'Q' prefix
-        QS = false;                      // reset the Quantified Self flag for next time  
+        QS = false;                      // reset the Quantified Self flag for next time    
      }
   
   ledFadeToBeat();
