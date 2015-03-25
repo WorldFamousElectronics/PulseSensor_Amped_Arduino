@@ -34,7 +34,7 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 ## Serial Output
 This code is designed with output serial data.
 The serial Data can be used/viewed:
-* In the Arduino Serial Monitor Window  Arduino>>Tools>>
+* In the Arduino Serial Monitor  `Arduino >> Tools >> Serial Monitor`
 * With our Processing Visualizer "PulseSensorAmped_Processing-xx",  
 * in our native Mac App, or by any third-party serial reader.
 
