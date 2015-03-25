@@ -7,6 +7,7 @@
 3. Determines BPM
 4. Prints All of the Above to Serial
 
+## Screen Shot
 ![alt text][screenshot]
 [screenshot]: https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ScreenCapArduino.png "Screen Shot" 
 
@@ -33,7 +34,6 @@ Pulse             | **Boolean** that is **true when a heartbeat is sensed**. It'
 QS                | **Boolean** that is **true whenever Pulse is found and BPM** is updated. User must reset. 
 
 
-## Screen Shot
 
 ## Serial Output
 This code is designed with output serial data.
