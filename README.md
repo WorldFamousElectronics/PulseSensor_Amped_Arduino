@@ -27,4 +27,4 @@ There is a tab in the Arduino code called Timer_Interrupt_Notes. This page descr
 
 ## The Video
 <a href="https://vimeo.com/123008578"> 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="The Pulse Sensor in 60 Seconds" width="240" height="180" border="10" /></a>
