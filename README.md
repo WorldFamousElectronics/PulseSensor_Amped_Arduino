@@ -20,6 +20,11 @@ BLACK         | GND (GROUND)
 PURPLE        | ANALOG 0
 
 ##Variables to Note
+1. Signal :    int that holds the analog signal data straight from the sensor. updated every 2mS.
+2. IBI  :      int that holds the time interval between beats. 2mS resolution.
+3. BPM  :      int that holds the heart rate value, derived every beat, from averaging previous 10 IBI values.
+4. QS  :       boolean that is made true whenever Pulse is found and BPM is updated. User must reset.
+5. Pulse :     boolean that is true when a heartbeat is sensed then false in time with pin13 LED going out.
 
 
 ## Note 
