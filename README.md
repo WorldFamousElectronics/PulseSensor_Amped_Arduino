@@ -25,7 +25,7 @@ Variable Name     | What it does
 Signal            | **Int** that holds **raw Analog Input data on **Pin 0**, the Pulse Sensor's **Purple Cable**. It's updated every 2mS.
 BPM               | **Int** that holds the **heart-rate value**, derived every beat, from averaging **previous 10 IBI values**. 
 IBI               | **Int** that holds the **time interval between beats**! Must be seeded! 
-Pulse             | Boolean that is true when a heartbeat is sensed then false in time with pin13 LED going out.
+Pulse             | **Boolean** that is **`true` when a heartbeat is sensed**. It's `false` other times.  It controls LED Pin 13.
 ## Note 
 There is a tab in the Arduino code called Timer_Interrupt_Notes. This page describes how to set up the Timer interrupt depending on which version of Arduino you are using, and what other things you may want to do with your sketch. Please read it carefully!
 
