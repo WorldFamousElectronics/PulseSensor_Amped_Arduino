@@ -1,5 +1,4 @@
-![alt text][logo]
-[logo]: https://avatars0.githubusercontent.com/u/7002937?v=3&s=200 "Logo Title Text 1"
+[logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200 "Logo Title Text 1)
 
 ## Pulse Sensor Arduino Code
 1. Blinks an LED to User's Live Heartbeat   
@@ -13,7 +12,7 @@
 
 ## To Use:
 1. Download ZIP on this page: 
-![alt text](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/download.png "Logo Title Text 1")
+![Download](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/download.png)
 2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
 3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder
 *This makes your the files are properly installed*
