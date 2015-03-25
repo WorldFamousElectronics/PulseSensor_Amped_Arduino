@@ -26,4 +26,4 @@ ANALOG 0      | PURPLE
 There is a tab in the Arduino code called Timer_Interrupt_Notes. This page describes how to set up the Timer interrupt depending on which version of Arduino you are using, and what other things you may want to do with your sketch. Please read it carefully!
 
 ## The Video
-<a href="https://vimeo.com/123008578"> "The Pulse Sensor in 60 Seconds" /></a>
+<a href="https://vimeo.com/123008578"> "The Pulse Sensor in 60 Seconds"</a>
