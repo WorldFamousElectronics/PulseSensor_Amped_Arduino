@@ -8,6 +8,7 @@ This code:
 3) Determines BPM
 4) Prints All of the Above to Serial
 
+Read Me:
 https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md   
  ----------------------       ----------------------  ---------------------- 
 */
