@@ -16,9 +16,10 @@
 2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
 3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder
 *This makes your the files are properly installed*
-4a.  Double-click on **PulseSensorAmped_Arduino_1dot2.ino**
-or
-4b.  Open project in Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino*
+4.  
+  * Double-click on **PulseSensorAmped_Arduino_1dot2.ino**
+   or
+ ** Open project in Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino*
 
 ## Pulse Sensor Hook-up
 Arduino Pin   | Pulse Sensor Cable Color
