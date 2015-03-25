@@ -3,10 +3,12 @@
 
 ## Pulse Sensor Arduino Code
 This code:
-1) Blinks an LED to User's Live Heartbeat   PIN 13
-2) Fades an LED to User's Live HeartBeat
-3) Determines BPM
-4) Prints All of the Above to Serial
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
 
 ## To Use:
 1) Take the entire file 'PulseSensorAmped_Arduino_1dot1' into your Documents/Arduino.
