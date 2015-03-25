@@ -36,7 +36,7 @@ This code is designed with output serial data.
 The serial Data can be used/viewed:
 * In the Arduino Serial Monitor  `Arduino >> Tools >> Serial Monitor`
 * With our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
-* in our native Mac App (TBA Spring 2015) 
+* In our native Mac App (TBA Spring 2015) 
 * Any any third-party serial reader.
 
 
