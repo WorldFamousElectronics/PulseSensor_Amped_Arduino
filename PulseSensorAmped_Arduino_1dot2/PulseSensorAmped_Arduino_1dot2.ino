@@ -1,7 +1,7 @@
 
 /*  Pulse Sensor Amped 1.2    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
 
----------------------- All Programming and Hardware Notes ---------------------- 
+----------------------  Notes ----------------------  ---------------------- 
 This code:
 1) Blinks an LED to User's Live Heartbeat   PIN 13
 2) Fades an LED to User's Live HeartBeat
@@ -9,7 +9,7 @@ This code:
 4) Prints All of the Above to Serial
 
 https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md   
----------------------- ---------------------- ---------------------- --------------
+ ----------------------       ----------------------  ---------------------- 
 */
 
 //  Variables
