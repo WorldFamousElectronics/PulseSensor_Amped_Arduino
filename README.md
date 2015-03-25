@@ -2,7 +2,7 @@
 [logo]: https://avatars0.githubusercontent.com/u/7002937?v=3&s=200 "Logo Title Text 1"
 
 ## Pulse Sensor Arduino Code
-1. Blinks an LED to User's Live Heartbeat   PIN 13
+1. Blinks an LED to User's Live Heartbeat   
 2. Fades an LED to User's Live HeartBeat
 3. Determines BPM
 4. Prints All of the Above to Serial
