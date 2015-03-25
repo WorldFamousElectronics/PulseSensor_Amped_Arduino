@@ -1,16 +1,16 @@
-## PulseSensor_Amped_Arduino
-Pulse Sensor Amped Arduino Code
+## Pulse Sensor Arduino Code
 
 ## TO USE:
 1) Take the entire file 'PulseSensorAmped_Arduino_1dot1' into your Documents/Arduino.
 2) Then start, or restart Arduino IDE and find the code in your Sketch folder.
 
 
-## Pulse Sensor Colored Cable Hook-up
-First Header  | Second Header
+## Pulse Sensor Hook-up
+Arduino Pin   | Pulse Sensor Cable Color
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+5V or 3V      | RED
+GND (GROUND)  | BLACK
+ANALOG 0      | PURPLE
 
 ##Variables to Note
 
