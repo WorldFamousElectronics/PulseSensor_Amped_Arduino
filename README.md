@@ -2,7 +2,6 @@
 
 ## To Use:
 1) Take the entire file 'PulseSensorAmped_Arduino_1dot1' into your Documents/Arduino.
-
 2) Then start, or restart Arduino IDE and find the code in your Sketch folder.
 
 
