@@ -1,5 +1,5 @@
 ![alt text][logo]
-[logo]: https://avatars0.githubusercontent.com/u/7002937?v=3&s=200 "Logo Title Text 1"
+[logo]: https://avatars0.githubusercontent.com/u/7002937?v=3&s=200 "Logo Title Text 3"
 
 ## Pulse Sensor Arduino Code
 
