@@ -1,29 +1,43 @@
 
 /*
->> Pulse Sensor Amped 1.2 <<
-This code is for Pulse Sensor Amped by Joel Murphy and Yury Gitman
-    www.pulsesensor.com 
-    >>> Pulse Sensor purple wire goes to Analog Pin 0 <<<
-Pulse Sensor sample aquisition and processing happens in the background via Timer 2 interrupt. 2mS sample rate.
-PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
-The following variables are automatically updated:
+Pulse Sensor Amped 1.2
+by Joel Murphy and Yury Gitman
+http://www.pulsesensor.com
+---------------------------------   
+
+This code:
+1) Blinks an LED to User's Live Heartbeat   PIN 13
+2) Fades an LED to User's Live HeartBeat
+3) Determines BPM
+4) Prints All of the Above to Serial
+---------------------------------   
+
+PULSE SENSOR HOOK-UP
+BLACK CABLE:  Ground (Arduino GND)
+RED CABLE:    5V
+PURPLE:  Analog In 0   
+---------------------------------   
+
+OPTIONAL LED HOOK-UP
+BLINK LED:  PIN 13 & GROUND
+FADE LED:   PIN 5
+---------------------------------   
+
+Variables to Note
 Signal :    int that holds the analog signal data straight from the sensor. updated every 2mS.
 IBI  :      int that holds the time interval between beats. 2mS resolution.
 BPM  :      int that holds the heart rate value, derived every beat, from averaging previous 10 IBI values.
 QS  :       boolean that is made true whenever Pulse is found and BPM is updated. User must reset.
 Pulse :     boolean that is true when a heartbeat is sensed then false in time with pin13 LED going out.
+---------------------------------   
 
-This code is designed with output serial data to Processing sketch "PulseSensorAmped_Processing-xx"
-The Processing sketch is a simple data visualizer. 
-All the work to find the heartbeat and determine the heartrate happens in the code below.
-Pin 13 LED will blink with heartbeat.
-If you want to use pin 13 for something else, adjust the interrupt handler
-It will also fade an LED on pin fadePin with every beat. Put an LED and series resistor from fadePin to GND.
-Check here for detailed code walkthrough:
-http://www.pulsesensor.com
+Important Note:
+PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
+---------------------------------   
 
-Code Version 1.2 by Joel Murphy & Yury Gitman  Spring 2013
-This update fixes the firstBeat and secondBeat flag usage so that realistic BPM is reported.
+About Serial 
+This code is designed with output serial data.
+The serial Data can be used in our Processing Visualizer "PulseSensorAmped_Processing-xx", in our native Mac App, or by any third-party serial reader. 
 
 */
 
