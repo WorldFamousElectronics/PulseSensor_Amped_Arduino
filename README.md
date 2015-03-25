@@ -31,6 +31,13 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 
 ## Screen Shot
 
+## Serial Output
+This code is designed with output serial data.
+The serial Data can be used/viewed:
+* In the Arduino Serial Monitor Window  Arduino>>Tools>>
+* With our Processing Visualizer "PulseSensorAmped_Processing-xx",  
+* in our native Mac App, or by any third-party serial reader.
+
 
 ## Note on PWM on Pins 3 and 11
 
