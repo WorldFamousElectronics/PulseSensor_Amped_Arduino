@@ -8,7 +8,7 @@ Pulse Sensor Amped Arduino Code
 ### Pulse Sensor Colored Cable Hook-up
 
 
-###Variables to Note
+##Variables to Note
 
 
 ##NOTE 
