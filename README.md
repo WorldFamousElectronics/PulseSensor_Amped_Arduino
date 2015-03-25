@@ -22,8 +22,8 @@ PURPLE        | ANALOG 0 (Zero)
 ##Variables to Note
 Variable Name   | What it does
 --------------- | -------------
->Signal          | *Int that holds raw Analog Input data on *Pin 0, the Pulse Sensor's *Purple Cable. It's updated every 2mS.
-BPM             | *Int that holds the *heart-rate value, derived every beat, from averaging *previous *10 *IBI values. 
+Signal          | *Int* that holds raw Analog Input data on *Pin 0*, the Pulse Sensor's *Purple Cable*. It's updated every 2mS.
+BPM             | *Int* that holds the *heart-rate value*, derived every beat, from averaging *previous 10 IBI values*. 
 Signal          | int that holds the analog signal data straight from the sensor. updated every 2mS.
 Signal          | int that holds the analog signal data straight from the sensor. updated every 2mS.
 
