@@ -4,10 +4,9 @@
 ## Pulse Sensor Arduino Code
 1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
+3. Another item
+4. Last Item
+
 
 ## To Use:
 1) Take the entire file 'PulseSensorAmped_Arduino_1dot1' into your Documents/Arduino.
