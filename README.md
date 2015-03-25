@@ -7,11 +7,10 @@ Pulse Sensor Amped Arduino Code
 
 
 ## Pulse Sensor Colored Cable Hook-up
-Signal :    int that holds the analog signal data straight from the sensor. updated every 2mS.
-IBI  :      int that holds the time interval between beats. 2mS resolution.
-BPM  :      int that holds the heart rate value, derived every beat, from averaging previous 10 IBI values.
-QS  :       boolean that is made true whenever Pulse is found and BPM is updated. User must reset.
-Pulse :     boolean that is true when a heartbeat is sensed then false in time with pin13 LED going out.
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 
 ##Variables to Note
 
