@@ -29,9 +29,14 @@ Pulse             | **Boolean** that is **true when a heartbeat is sensed**. It'
 QS                | **Boolean** that is **true whenever Pulse is found and BPM** is updated. User must reset. 
 
 
+## Screen Shot
 
-## Note 
+
+## Note on PWM on Pins 3 and 11
+
+## (Advanced) Timer Interrupt Notes
 There is a tab in the Arduino code called Timer_Interrupt_Notes. This page describes how to set up the Timer interrupt depending on which version of Arduino you are using, and what other things you may want to do with your sketch. Please read it carefully!
+
 
 ## The Video
 <a href="https://vimeo.com/123008578"> "The Pulse Sensor in 60 Seconds"</a>
