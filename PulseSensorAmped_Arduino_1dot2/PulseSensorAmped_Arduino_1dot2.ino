@@ -1,59 +1,28 @@
 
-/*
-Pulse Sensor Amped 1.2
-by Joel Murphy and Yury Gitman
-http://www.pulsesensor.com
----------------------------------   
+/*  Pulse Sensor Amped 1.2    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
 
+---------------------- All Programming and Hardware Notes ---------------------- 
 This code:
 1) Blinks an LED to User's Live Heartbeat   PIN 13
 2) Fades an LED to User's Live HeartBeat
 3) Determines BPM
 4) Prints All of the Above to Serial
----------------------------------   
 
-PULSE SENSOR HOOK-UP
-BLACK CABLE:  Ground (Arduino GND)
-RED CABLE:    5V
-PURPLE:  Analog In 0   
----------------------------------   
-
-OPTIONAL LED HOOK-UP
-BLINK LED:  PIN 13 & GROUND
-FADE LED:   PIN 5
----------------------------------   
-
-Variables to Note
-Signal :    int that holds the analog signal data straight from the sensor. updated every 2mS.
-IBI  :      int that holds the time interval between beats. 2mS resolution.
-BPM  :      int that holds the heart rate value, derived every beat, from averaging previous 10 IBI values.
-QS  :       boolean that is made true whenever Pulse is found and BPM is updated. User must reset.
-Pulse :     boolean that is true when a heartbeat is sensed then false in time with pin13 LED going out.
----------------------------------   
-
-Important Note:
-PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
----------------------------------   
-
-About Serial 
-This code is designed with output serial data.
-The serial Data can be used in our Processing Visualizer "PulseSensorAmped_Processing-xx", in our native Mac App, or by any third-party serial reader. 
-
+https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md   
+---------------------- ---------------------- ---------------------- --------------
 */
 
-
-//  VARIABLES
+//  Variables
 int pulsePin = 0;                 // Pulse Sensor purple wire connected to analog pin 0
 int blinkPin = 13;                // pin to blink led at each beat
 int fadePin = 5;                  // pin to do fancy classy fading blink at each beat
 int fadeRate = 0;                 // used to fade LED on with PWM on fadePin
 
-
-// these variables are volatile because they are used during the interrupt service routine!
-volatile int BPM;                   // used to hold the pulse rate
+// Volatile Variables, used in the interrupt service routine!
+volatile int BPM;                   // int that holds raw Analog in 0. updated every 2mS
 volatile int Signal;                // holds the incoming raw data
-volatile int IBI = 600;             // holds the time between beats, must be seeded! 
-volatile boolean Pulse = false;     // true when pulse wave is high, false when it's low
+volatile int IBI = 600;             // int that holds the time interval between beats! Must be seeded! 
+volatile boolean Pulse = false;     // "True" when User's live heartbeat is detected. "False" when not a "live beat". 
 volatile boolean QS = false;        // becomes true when Arduoino finds a beat.
 
 
@@ -68,18 +37,19 @@ void setup(){
 }
 
 
-
+//  Where the Magic Happens
 void loop(){
-  sendDataToProcessing('S', Signal);     // send Processing the raw Pulse Sensor data
+  
+  sendDataToSerial('S', Signal);     // send Processing the raw Pulse Sensor data
+  
   if (QS == true){                       // Quantified Self flag is true when arduino finds a heartbeat
         fadeRate = 255;                  // Set 'fadeRate' Variable to 255 to fade LED with pulse
-        sendDataToProcessing('B',BPM);   // send heart rate with a 'B' prefix
-        sendDataToProcessing('Q',IBI);   // send time between beats with a 'Q' prefix
+        sendDataToSerial('B',BPM);   // send heart rate with a 'B' prefix
+        sendDataToSerial('Q',IBI);   // send time between beats with a 'Q' prefix
         QS = false;                      // reset the Quantified Self flag for next time    
-     }
-  
+     }  
+     
   ledFadeToBeat();
-  
   delay(20);                             //  take a break
 }
 
@@ -91,7 +61,7 @@ void ledFadeToBeat(){
   }
 
 
-void sendDataToProcessing(char symbol, int data ){
+void sendDataToSerial(char symbol, int data ){
     Serial.print(symbol);                // symbol prefix tells Processing what type of data is coming
     Serial.println(data);                // the data to send culminating in a carriage return
   }
