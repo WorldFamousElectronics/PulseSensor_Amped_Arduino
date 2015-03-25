@@ -17,7 +17,7 @@ Arduino Pin   | Pulse Sensor Cable Color
 ------------- | -------------
 RED           | 5V or 3V   
 BLACK         | GND (GROUND)
-PURPLE        | ANALOG 0
+PURPLE        | ANALOG IN 0
 
 ##Variables to Note
 1. Signal :    int that holds the analog signal data straight from the sensor. updated every 2mS.
