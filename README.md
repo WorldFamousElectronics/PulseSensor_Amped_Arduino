@@ -40,10 +40,11 @@ The serial Data can be used/viewed:
 * Any any third-party serial reader.
 
 
-## Note on PWM on Pins 3 and 11
 
-## (Advanced) Timer Interrupt Notes
+## (Advanced) Timer Interrupt Notes / PWM on Pin 3 & 11
 There is a tab in the Arduino code called Timer_Interrupt_Notes. This page describes how to set up the Timer interrupt depending on which version of Arduino you are using, and what other things you may want to do with your sketch. Please read it carefully!
+
+PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
 
 
 ## The Video
