@@ -8,18 +8,18 @@
 4. Prints All of the Above to Serial
 
 ## Screen Shot
-![alt text][screenshot]
-[screenshot]: https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ScreenCapArduino.png "Screen Shot" 
+![ScreenShot](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ScreenCapArduino.png) 
 
 
 ## To Use:
-1. Download ZIP: 
+1. Download ZIP on this page: 
 ![alt text](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/download.png "Logo Title Text 1")
-2. Take the entire file 'PulseSensorAmped_Arduino_1dot1' into your Documents/Arduino.
-
-   https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/archive/master.zip
-2. Then start, or restart Arduino IDE and find the code in your Sketch folder.
-
+2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
+3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder
+*This makes your the files are properly installed*
+4.  Double-click on **PulseSensorAmped_Arduino_1dot2.ino**
+or
+4.  Open project in Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino*
 
 ## Pulse Sensor Hook-up
 Arduino Pin   | Pulse Sensor Cable Color
