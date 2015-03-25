@@ -18,9 +18,8 @@
 *This makes your the files are properly installed*
 4.  
   * Double-click on **PulseSensorAmped_Arduino_1dot2.ino** ![filesys](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/filesys.png)
-
- ** Or, ppen project in Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino*
- ![sketchbook](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ArduinoSketch.png
+  *  Or, ppen project in Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino*
+ ![sketchbook](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ArduinoSketch.png)
 
 
 ## Pulse Sensor Hook-up
