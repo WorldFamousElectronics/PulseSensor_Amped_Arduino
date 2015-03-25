@@ -20,7 +20,7 @@ Pin 13 LED will blink with heartbeat.
 If you want to use pin 13 for something else, adjust the interrupt handler
 It will also fade an LED on pin fadePin with every beat. Put an LED and series resistor from fadePin to GND.
 Check here for detailed code walkthrough:
-http://pulsesensor.myshopify.com/pages/pulse-sensor-amped-arduino-v1dot1
+http://www.pulsesensor.com
 
 Code Version 1.2 by Joel Murphy & Yury Gitman  Spring 2013
 This update fixes the firstBeat and secondBeat flag usage so that realistic BPM is reported.
