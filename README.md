@@ -56,20 +56,19 @@ To talk to other App's via serial you need to disable the Serial Monitor Visuali
 Change:
 ```
 // Regards Serial OutPut  -- Set This Up to your needs
-static boolean serialVisual = true;   // Set to 'true' by Default.  Re-set to 'false' to sendDataToSerial instead. : ) 
+static boolean serialVisual = true;   // Set to 'true' by Default. 
+
 ```
 too:
 ```
 // Regards Serial OutPut  -- Set This Up to your needs
-static boolean serialVisual = true;   // Set to 'true' by Default.  Re-set to 'false' to sendDataToSerial instead. : ) 
-```
+static boolean serialVisual = false;   // Re-set to 'false' to sendDataToSerial instead. : ) 
 
+```
 That's it!.
-The serial Data can be used/viewed:
-* In the Arduino Serial Monitor  `Arduino >> Tools >> Serial Monitor`
-* With our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
-* In our native Mac App (TBA Spring 2015) 
-* Any any third-party serial reader.
+* Now you can work with our **Processing App** <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
+* Your can work with our **Pulse Sensor Mac App** (TBA Spring 2015) <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>
+* You can work with **any** third-party serial reader.
 
 
 
