@@ -34,6 +34,10 @@ PURPLE        | ANALOG 0 (Zero)
 ![cablehookup](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/cablehookup.png)
 
 
+## Ear-Clip or Finger-Strap Config
+![Picture](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer/blob/master/EarClip.png)
+![Picture](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer/blob/master/FingerStrap.png)
+
 
 ##Variables to Note
 Variable Name     | What it does
