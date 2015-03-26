@@ -1,5 +1,5 @@
 
-/*  Pulse Sensor Amped 1.3    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
+/*  Pulse Sensor Amped 1.4    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
 
 ----------------------  Notes ----------------------  ---------------------- 
 This code:
@@ -26,6 +26,9 @@ volatile int IBI = 600;             // int that holds the time interval between 
 volatile boolean Pulse = false;     // "True" when User's live heartbeat is detected. "False" when not a "live beat". 
 volatile boolean QS = false;        // becomes true when Arduoino finds a beat.
 
+// Regards Serial OutPut  -- Set This Up to your needs
+static boolean serialVisual = true;   // Set to 'true' by Default.  Re-set to 'false' to sendDataToSerial instead. : ) 
+
 
 void setup(){
   pinMode(blinkPin,OUTPUT);         // pin that will blink to your heartbeat!
@@ -41,31 +44,27 @@ void setup(){
 //  Where the Magic Happens
 void loop(){
   
-  sendDataToSerial('S', Signal);     // send Processing the raw Pulse Sensor data
-  
-  if (QS == true){                       // Quantified Self flag is true when arduino finds a heartbeat
-        fadeRate = 255;                  // Set 'fadeRate' Variable to 255 to fade LED with pulse
-        sendDataToSerial('B',BPM);   // send heart rate with a 'B' prefix
-        sendDataToSerial('Q',IBI);   // send time between beats with a 'Q' prefix
+    serialOutput() ;       
+    
+  if (QS == true){     //  A Heartbeat Was Found
+                       // BPM and IBI have been Determined
+                       // Quantified Self "QS" true when arduino finds a heartbeat
+        digitalWrite(blinkPin,HIGH);     // Blink LED, we got a beat. 
+        fadeRate = 255;         // Makes the LED Fade Effect Happen
+                                // Set 'fadeRate' Variable to 255 to fade LED with pulse
+        serialOutputWhenBeatHappens();   // A Beat Happened, Output that to serial.     
         QS = false;                      // reset the Quantified Self flag for next time    
-     }  
+       } 
+      else { 
+
+      digitalWrite(blinkPin,LOW);            // There is not beat, turn off pin 13 LED
+      }
      
-  ledFadeToBeat();
+   ledFadeToBeat();                      // Makes the LED Fade Effect Happen 
   delay(20);                             //  take a break
 }
 
 
-void ledFadeToBeat(){
-    fadeRate -= 15;                         //  set LED fade value
-    fadeRate = constrain(fadeRate,0,255);   //  keep LED fade value from going into negative numbers!
-    analogWrite(fadePin,fadeRate);          //  fade LED
-  }
-
-
-void sendDataToSerial(char symbol, int data ){
-    Serial.print(symbol);                // symbol prefix tells Processing what type of data is coming
-    Serial.println(data);                // the data to send culminating in a carriage return
-  }
 
 
 
