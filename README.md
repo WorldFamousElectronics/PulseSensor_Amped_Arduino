@@ -43,7 +43,8 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 
 
 
-## Serial Output
+## Serial Monitor Visualizer Output
+![asciiviz](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/asciiviz.png)
 This code is designed with output serial data.
 The serial Data can be used/viewed:
 * In the Arduino Serial Monitor  `Arduino >> Tools >> Serial Monitor`
