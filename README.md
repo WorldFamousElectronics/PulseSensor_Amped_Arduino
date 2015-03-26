@@ -45,7 +45,27 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 
 ## Serial Monitor Visualizer Output
 ![asciiviz](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/asciiviz.png)
-This code is designed with output serial data.
+See the User's Pulse without leaving Arduino.  Open the serial monitor for ASCII visualization of the Pulse Sensor. 
+Beats are shown, as well as, BPM. 
+
+To Open Serial Monitor: `Arduino >> Tools >> Serial Monitor`
+
+
+## Serial to Processing, our Mac App, or a third-party serial reader
+To talk to other App's via serial you need to disable the Serial Monitor Visualizer. 
+
+Change:
+```
+// Regards Serial OutPut  -- Set This Up to your needs
+static boolean serialVisual = true;   // Set to 'true' by Default.  Re-set to 'false' to sendDataToSerial instead. : ) 
+```
+too:
+```
+// Regards Serial OutPut  -- Set This Up to your needs
+static boolean serialVisual = true;   // Set to 'true' by Default.  Re-set to 'false' to sendDataToSerial instead. : ) 
+```
+
+That's it!.
 The serial Data can be used/viewed:
 * In the Arduino Serial Monitor  `Arduino >> Tools >> Serial Monitor`
 * With our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
