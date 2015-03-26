@@ -44,7 +44,7 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 
 
 ## Serial Monitor Visualizer Output
-See the User's Pulse & BPM without leaving Arduino.  Open the serial monitor for this ASCII visualization. 
+See the User's Pulse & BPM without leaving Arduino.  Open the serial monitor for this ASCII visualization.
 To Open Serial Monitor: `Arduino >> Tools >> Serial Monitor`
 ![asciiviz](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/asciiviz.png)
 
