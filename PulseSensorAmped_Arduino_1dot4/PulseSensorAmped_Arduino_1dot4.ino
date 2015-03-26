@@ -10,7 +10,7 @@ This code:
 
 Read Me:
 https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md   
- ----------------------       ----------------------  ---------------------- 
+ ----------------------       ----------------------  ----------------------
 */
 
 //  Variables
