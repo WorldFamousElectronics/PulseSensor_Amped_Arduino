@@ -18,7 +18,6 @@
 **This properly installs your files**
 
 4.  
-
   * Double-click on **PulseSensorAmped_Arduino_1dot2.ino** ![filesys](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/filesys.png)
 
   *  **Or,** 0pen project in **Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino**
@@ -49,7 +48,7 @@ See the User's Pulse & BPM without leaving Arduino.  Open the serial monitor for
 ![asciiviz](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/asciiviz.png)
 
 
-## Serial to Processing, our Mac App, or a third-party serial reader
+## Serial to Processing, our Mac App, or Third-Party Serial
 To talk to other App's via serial you need to disable the Serial Monitor Visualizer. 
 Change:
 ```
