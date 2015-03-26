@@ -1,5 +1,5 @@
 
-/*  Pulse Sensor Amped 1.2    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
+/*  Pulse Sensor Amped 1.3    by Joel Murphy and Yury Gitman   http://www.pulsesensor.com
 
 ----------------------  Notes ----------------------  ---------------------- 
 This code:
