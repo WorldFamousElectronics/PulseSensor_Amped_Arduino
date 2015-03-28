@@ -55,19 +55,17 @@ See the User's Pulse & BPM without leaving Arduino.  Open the serial monitor for
 * To Open Serial Monitor: `Arduino >> Tools >> Serial Monitor`
 ![asciiviz](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/asciiviz.png)
 
+To Turn On ASCII Visualizer:
 
-## Serial to Processing or our Mac App
-To talk to other App's via serial you need to disable the Serial Monitor Visualizer. 
-Change:
 ```
 // Regards Serial OutPut  -- Set This Up to your needs
-static boolean serialVisual = true;   // Set to 'true' by Default. 
+static boolean serialVisual = false;   // Set to 'false' by Default. 
 
 ```
 too:
 ```
 // Regards Serial OutPut  -- Set This Up to your needs
-static boolean serialVisual = false;   // Re-set to 'false' to sendDataToSerial instead. : ) 
+static boolean serialVisual = true;   // Re-set to 'true' to do ASCII Visual Pulse  : ) 
 
 ```
 That's it!.
