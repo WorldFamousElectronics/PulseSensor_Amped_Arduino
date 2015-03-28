@@ -49,7 +49,7 @@ Pulse             | **Boolean** that is **true when a heartbeat is sensed**. It'
 QS                | **Boolean** that is **true whenever Pulse is found and BPM** is updated. User must reset. 
 
 
-## Intergrated Software
+## Works with Pulse Sensor Apps
 This Arduion App works with:
 * Works with our **Processing App** <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
 *  Works with our **Pulse Sensor Mac App** <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>
