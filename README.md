@@ -68,10 +68,13 @@ too:
 static boolean serialVisual = true;   // Re-set to 'true' to do ASCII Visual Pulse  : ) 
 
 ```
-That's it!.
-* Now you can work with our **Processing App** <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
-* Your can work with our **Pulse Sensor Mac App** (TBA Spring 2015) <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>
-* You can work with **any** third-party serial reader.
+That's it's!   Upload and open your Arduino Serial Monitor. 
+
+## Intergrated Software
+This Arduion App works with:
+* Works with our **Processing App** <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
+*  Works with our **Pulse Sensor Mac App** <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>
+* Works with **any** third-party serial reader.
 
 
 
