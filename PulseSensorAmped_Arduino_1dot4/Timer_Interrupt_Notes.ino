@@ -1,5 +1,5 @@
 /*
-  These notes put together by Joel Murphy for Pulse Sensor Amped, Winter 2015
+  These notes put together by Joel Murphy for Pulse Sensor Amped, 2015
 
   The code that this section is attached to uses a timer interrupt
   to sample the Pulse Sensor with consistent and regular timing.
