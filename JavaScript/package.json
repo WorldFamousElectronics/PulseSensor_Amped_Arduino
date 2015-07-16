@@ -1,0 +1,14 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "description": "Node.js code to use the Pulse Sensor Amped with the Arduino",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nakul Camasamudram",
+  "license": "MIT",
+  "dependencies": {
+    "johnny-five": "^0.8.85"
+  }
+}

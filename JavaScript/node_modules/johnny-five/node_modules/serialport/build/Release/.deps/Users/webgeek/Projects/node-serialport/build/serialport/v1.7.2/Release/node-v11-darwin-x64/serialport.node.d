@@ -1,0 +1,1 @@
+cmd_/Users/webgeek/Projects/node-serialport/build/serialport/v1.7.2/Release/node-v11-darwin-x64/serialport.node := rm -rf "/Users/webgeek/Projects/node-serialport/build/serialport/v1.7.2/Release/node-v11-darwin-x64/serialport.node" && cp -af "Release/serialport.node" "/Users/webgeek/Projects/node-serialport/build/serialport/v1.7.2/Release/node-v11-darwin-x64/serialport.node"
