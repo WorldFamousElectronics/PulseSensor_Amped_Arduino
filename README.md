@@ -87,3 +87,22 @@ PWM on pins 3 and 11 will not work when using this code, because we are using Ti
 
 ## The Video
 <a href="https://vimeo.com/123008578"> "The Pulse Sensor in 60 Seconds"</a>
+
+## Arduino YÚN
+The original code works with Arduino UNO or Arduino PRO or Arduino Pro Mini 5V or any Arduino running with an ATmega328 and 16MHz clock. However The processor inside Yun is ATmega32u4 running at 16MHz. For Yun to work you have to swap out some lines in the interrupt.ino code with:
+
+```
+void interruptSetup(){
+ TCCR1A = 0x00;
+ TCCR1B = 0x0C; 
+ OCR1A = 0x7C; 
+ TIMSK1 = 0x02; 
+ sei();
+}
+```
+
+
+The only other thing you will need is the correct ISR vector in the next step. ATmega32u4 devices use:
+```
+ISR(TIMER1_COMPA_vect)
+```
