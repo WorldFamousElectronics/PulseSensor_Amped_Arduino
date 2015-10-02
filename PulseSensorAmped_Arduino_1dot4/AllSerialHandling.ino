@@ -37,16 +37,6 @@ void sendDataToSerial(char symbol, int data ){
   }
 
 
-
-
-
-void ledFadeToBeat(){
-    fadeRate -= 15;                         //  set LED fade value
-    fadeRate = constrain(fadeRate,0,255);   //  keep LED fade value from going into negative numbers!
-    analogWrite(fadePin,fadeRate);          //  fade LED
-  }
-
-
 //  Code to Make the Serial Monitor Visualizer Work
 void arduinoSerialMonitorVisual(char symbol, int data ){    
   const int sensorMin = 0;      // sensor minimum, discovered through experiment
