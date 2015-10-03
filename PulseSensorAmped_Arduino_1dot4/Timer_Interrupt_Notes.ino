@@ -151,6 +151,9 @@
   ******************************************************************************************
   ADAFRUIT Gemma (or any other board with ATtiny85 running at 8MHz)
   
+    NOTE: Gemma does not do serial communication! 
+          Comment out or remove the Serial code in the Arduino sketch!
+  
   Timer1
   
     Use of Timer1 breaks PWM output on pin D1
