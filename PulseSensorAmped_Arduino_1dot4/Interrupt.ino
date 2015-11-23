@@ -46,7 +46,7 @@ ISR(TIMER2_COMPA_vect){                         // triggered when Timer2 counts 
   if (N > 250){                                   // avoid high frequency noise
     if ( (Signal > thresh) && (Pulse == false) && (N > (IBI/5)*3) ){        
       Pulse = true;                               // set the Pulse flag when we think there is a pulse
-//      digitalWrite(blinkPin,HIGH);                // turn on pin 13 LED
+      digitalWrite(blinkPin,HIGH);                // turn on pin 13 LED
       IBI = sampleCounter - lastBeatTime;         // measure time between beats in mS
       lastBeatTime = sampleCounter;               // keep track of time for next pulse
 
