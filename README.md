@@ -11,16 +11,14 @@
 
 
 ## Installing
-1. Download ZIP on this page: 
-![Download](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/download.png)
+1. Download the latest code using 'Download Zip' on this page, or get it [here](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/archive/master.zip).
 2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
 3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder.  
-**This properly installs your files**
-
+**This properly unpacks the necessary files.**
 4.  
   * Double-click on **PulseSensorAmped_Arduino_1dot2.ino** ![filesys](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/filesys.png)
 
-  *  **Or,** 0pen project in **Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino**
+  *  **Or,** open the project in the **Arduino IDE** via **File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1dot2.ino**
  ![sketchbook](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/ArduinoSketch.png)
 
 
@@ -50,7 +48,7 @@ QS                | **Boolean** that is **true whenever Pulse is found and BPM**
 
 
 ## Works with Pulse Sensor Apps
-This Arduion App works with:
+This Arduino App works with:
 * Works with our **Processing App** <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a>
 *  Works with our **Pulse Sensor Mac App** <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>
 * Works with **any** third-party serial reader.
@@ -75,7 +73,7 @@ too:
 static boolean serialVisual = true;   // Re-set to 'true' to do ASCII Visual Pulse  : ) 
 
 ```
-That's it's!   Upload and open your Arduino Serial Monitor. 
+That's it!   Upload and open your Arduino Serial Monitor. 
 
 
 
