@@ -4,7 +4,7 @@
 ----------------------  Notes ----------------------  ---------------------- 
 This code:
 1) Blinks an LED to User's Live Heartbeat   PIN 13
-2) Fades an LED to User's Live HeartBeat
+2) Fades an LED to User's Live HeartBeat    PIN 5
 3) Determines BPM
 4) Prints All of the Above to Serial
 
