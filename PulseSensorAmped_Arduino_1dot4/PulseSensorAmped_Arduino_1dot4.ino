@@ -10,6 +10,9 @@ This code:
 
 Read Me:
 https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/README.md   
+
+Updated with HRV display by Elliot Mebane, Roguish, Inc. Feb 2016
+HRV requires 1 minute of data before it's accurate. 
  ----------------------       ----------------------  ----------------------
 */
 
@@ -25,6 +28,14 @@ volatile int Signal;                // holds the incoming raw data
 volatile int IBI = 600;             // int that holds the time interval between beats! Must be seeded! 
 volatile boolean Pulse = false;     // "True" when User's live heartbeat is detected. "False" when not a "live beat". 
 volatile boolean QS = false;        // becomes true when Arduoino finds a beat.
+
+volatile int RRDelta = 0;
+volatile double RMSSD = 0;
+volatile double LN20RMSSD = 0;
+volatile double SDNN = 0;
+volatile double SDSD = 0;
+volatile double NN50 = 0;
+volatile double PNN50 = 0;
 
 // Regards Serial OutPut  -- Set This Up to your needs
 static boolean serialVisual = false;   // Set to 'false' by Default.  Re-set to 'true' to see Arduino Serial Monitor ASCII Visual Pulse 
