@@ -174,7 +174,61 @@
   
   ******************************************************************************************
   
+  IF YOU DON'T SEE THE MICROCONTROLLER YOU ARE USING, BUT YOU WANT A QUICK AND DIRTY SOLUTION
   
+  So many new micros are coming out that it's kind of mind boggling. We will add to this list with 
+  code that uses interupts when we can, but if your micro is not listed here, and you are not willing
+  or able to grab a hardware timer yourself, here is a shortcut that will 'work'.
+  It won't have the tight timing of a hardware interrupt, but it just might be good enough. 
+  The code below will set up a microsecond timer and 'trigger' every 2mS (or so). 
+  You will need to change the name of the funcion in the Interrupts tab from
+  'ISR(TIMER2_COMPA_vect)'
+  to
+  'getPulse()'
+  in order for this to work.
+  
+  Happy Hacking!
+  
+  
+  
+  // FIRST, CREATE VARIABLES TO PERFORM THE SAMPLE TIMING FUNCTION
+  unsigned long lastTime;
+  unsigned long thisTime;
+
+  void setup(){
+    pinMode(blinkPin,OUTPUT);         // pin that will blink to your heartbeat!
+    pinMode(fadePin,OUTPUT);          // pin that will fade to your heartbeat!
+    Serial.begin(115200);             // we agree to talk fast!
+    // ADD THIS LINE IN PLACE OF THE interruptSetup() CALL
+    lastTime = micros();              // get the time so we can create a software 'interrupt'
+    // IF YOU ARE POWERING The Pulse Sensor AT VOLTAGE LESS THAN THE BOARD VOLTAGE, 
+    // UN-COMMENT THE NEXT LINE AND APPLY THAT VOLTAGE TO THE A-REF PIN
+    //   analogReference(EXTERNAL);   
+  } //end of setup()
+ 
+  //IN THE LOOP, ADD THE CODE THAT WILL DO THE 2mS TIMING, AND CALL THE getPulse() routine.
+  void loop(){
+  
+    serialOutput() ;       
+    
+    thisTime = micros();            // GET THE CURRENT TIME
+    if(thisTime - lastTime > 2000){ // CHECK TO SEE IF 2mS HAS PASSED
+      lastTime = thisTime;          // KEEP TRACK FOR NEXT TIME
+      getPulse();                   //CHANGE 'ISR(TIMER2_COMPA_vect)' TO 'getPulse()' IN THE INTERRUPTS TAB!
+    }
+    
+  if (QS == true){     // A Heartbeat Was Found
+                       // BPM and IBI have been Determined
+                       // Quantified Self "QS" true when arduino finds a heartbeat
+        fadeRate = 255;         // Makes the LED Fade Effect Happen
+                                // Set 'fadeRate' Variable to 255 to fade LED with pulse
+        serialOutputWhenBeatHappens();   // A Beat Happened, Output that to serial.     
+        QS = false;                      // reset the Quantified Self flag for next time    
+  }
+     
+  ledFadeToBeat();                      // Makes the LED Fade Effect Happen 
+  delay(20);                             //  take a break
+}
   
   
   
