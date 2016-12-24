@@ -11,8 +11,7 @@
 
 
 ## Installing
-1. Download ZIP on this page: 
-![Download](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino/blob/master/pics/download.png)
+1. Download the ZIP or clone this repository using the link above.
 2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
 3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder.  
 **This properly installs your files**
