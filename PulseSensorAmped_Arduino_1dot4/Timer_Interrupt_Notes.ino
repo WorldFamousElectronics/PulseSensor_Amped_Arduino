@@ -184,7 +184,7 @@
   You will need to change the name of the funcion in the Interrupts tab from
   'ISR(TIMER2_COMPA_vect)'
   to
-  'getPulse()'
+  'void getPulse()'
   and also comment out the entire interruptSetup() function in the interrupts tab in order for this to work.
   
   Happy Hacking!
