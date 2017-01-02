@@ -185,7 +185,7 @@
   'ISR(TIMER2_COMPA_vect)'
   to
   'getPulse()'
-  in order for this to work.
+  and also comment out the entire interruptSetup() function in the interrupts tab in order for this to work.
   
   Happy Hacking!
   
