@@ -20,10 +20,27 @@ void serialOutputWhenBeatHappens(){
     Serial.print("*** Heart-Beat Happened *** ");  //ASCII Art Madness
     Serial.print("BPM: ");
     Serial.print(BPM);
-    Serial.print("  ");
+    Serial.print(", IBI: ");
+    Serial.print( IBI );
+    Serial.print( ", NNDelta: " );
+    Serial.print( RRDelta );
+    Serial.print( ", SDNN: " );
+    Serial.print( SDNN );
+    Serial.print(" ||  HRV: ");
+    Serial.print( int( LN20RMSSD ) );
+    Serial.print(" (RMSSD: ");
+    Serial.print( RMSSD );
+    Serial.print( "), SDSD: " );
+    Serial.print( SDSD );
+    Serial.print( ", NN50: " );
+    Serial.print( NN50 );
+    Serial.print( ", pNN50: " );
+    Serial.print( PNN50 );
+    Serial.println( " " );
  } else{
-        sendDataToSerial('B',BPM);   // send heart rate with a 'B' prefix
-        sendDataToSerial('Q',IBI);   // send time between beats with a 'Q' prefix
+        sendDataToSerial('B',BPM);                  // send heart rate with a 'B' prefix
+        sendDataToSerial('Q',IBI);                  // send time between beats with a 'Q' prefix
+        sendDataToSerial('H', int( LN20RMSSD ) );   // send HRV with a 'H' prefix
  }   
 }
 
@@ -39,8 +56,8 @@ void sendDataToSerial(char symbol, int data ){
 
 //  Code to Make the Serial Monitor Visualizer Work
 void arduinoSerialMonitorVisual(char symbol, int data ){    
-  const int sensorMin = 0;      // sensor minimum, discovered through experiment
-const int sensorMax = 1024;    // sensor maximum, discovered through experiment
+  const int sensorMin = 0;        // sensor minimum, discovered through experiment
+  const int sensorMax = 1024;     // sensor maximum, discovered through experiment
 
   int sensorReading = data;
   // map the sensor range to a range of 12 options:
@@ -50,7 +67,7 @@ const int sensorMax = 1024;    // sensor maximum, discovered through experiment
   // range value:
   switch (range) {
   case 0:     
-    Serial.println("");     /////ASCII Art Madness
+    Serial.println("");           /////ASCII Art Madness
     break;
   case 1:   
     Serial.println("---");
