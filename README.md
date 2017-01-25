@@ -13,13 +13,10 @@
 ## Installing
 1. Click the `Clone or Download` button above and download the zip, or if you are a github user, clone this repo, or fork it! 
 2. Take the **PulseSensor_Amped_Arduino-master.zip** file, and move it to your **Documents/Arduino** folder.
-3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder.  
-**This properly installs your files**
+3. **Unzip** PulseSensor_Amped_Arduino-master.zip in your **Documents/Arduino** folder. **This properly installs your files.**
+4. Double-click on **PulseSensorAmped_Arduino_1.5.0.ino** ![filesys](pics/filesys.png)
 
-4.  
-  * Double-click on **PulseSensorAmped_Arduino_1.5.0.ino** ![filesys](pics/filesys.png)
-
-  *  **Or,** 0pen project in **Arduino via *File > Sketchbook > PulseSensor_Arduino-Master > PulseSensorAmped_Arduino_1.5.0.ino**
+	**Or,** 0pen project in **Arduino via *File > Sketchbook > PulseSensor_Amped_Arduino-Master > PulseSensorAmped_Arduino_1.5.0.ino**
  ![sketchbook](pics/ArduinoSketch.png)
 
 ## Pulse Sensor Preparation
@@ -75,7 +72,7 @@ When you turn on the Plotter, make sure that the baud rate is set to 115200. Mak
 
 ![Serial Plotter Shot](pics/plotter.png)
 
-If you only want to see the pulse wave `Signal` data, then you can edit the Arduino Sketch. In the `AllSerialHandling` tab, simply comment out the lines shown below.
+If you only want to see the pulse wave `Signal` data, then you can edit the Arduino Sketch. In the `AllSerialHandling.ino` tab, simply comment out the lines shown below.
 
 ![comment data](pics/plot-pulse-only.png)
 
