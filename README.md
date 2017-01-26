@@ -72,7 +72,7 @@ When you turn on the Plotter, make sure that the baud rate is set to 115200. Mak
 
 ![Serial Plotter Shot](pics/plotter.png)
 
-If you only want to see the pulse wave `Signal` data, then you can edit the Arduino Sketch. In the `AllSerialHandling.ino` tab, simply comment out the lines shown below.
+If you only want to see the pulse wave `Signal` data, then you can edit the Arduino Sketch. In the `AllSerialHandling.ino` tab, simply comment out the lines shown below by inserting `//` in the beginning of the line.
 
 ![comment data](pics/plot-pulse-only.png)
 
