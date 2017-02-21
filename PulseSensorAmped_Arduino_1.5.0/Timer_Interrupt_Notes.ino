@@ -175,22 +175,33 @@
 
   So many new micros are coming out that it's kind of mind boggling. We will add to this list with
   code that uses interupts when we can, but if your micro is not listed here, and you are not willing
-  or able to grab a hardware timer yourself, here is a shortcut that will 'work'.
+  or able to grab a hardware timer yourself, here is a shortcut that will work.
   It won't have the tight timing of a hardware interrupt, but it just might be good enough.
+  We are calling this the 'Software Interrupt' version.
   The code below will set up a microsecond timer and 'trigger' every 2mS (or so).
+  
+  FIRST:
   You will need to change the name of the funcion in the Interrupts tab from
   'ISR(TIMER2_COMPA_vect)'
   to
   'void getPulse()'
-  and also comment out the entire interruptSetup() function in the interrupts tab in order for this to work.
+  
+  THEN:
+  Comment out the entire interruptSetup() function in the interrupts tab in order for this to work.
+  
+  USE:
+  The code example below. Notice that we are using the micros() and the millis() to time the sample rate and the fade rate.
+  DO NOT put any delays in the loop, or it will break the sample timing!
 
   Happy Hacking!
 
 
 
-  // FIRST, CREATE VARIABLES TO PERFORM THE SAMPLE TIMING FUNCTION
-  unsigned long lastTime;
-  unsigned long thisTime;
+  // FIRST, CREATE VARIABLES TO PERFORM THE SAMPLE TIMING AND LED FADE FUNCTIONS
+  unsigned long lastTime; // used to time the Pulse Sensor samples
+  unsigned long thisTime; // used to time the Pulse Sensor samples
+  unsigned long fadeTime; // used to time the LED fade
+  
   void setup(){
     pinMode(blinkPin,OUTPUT);         // pin that will blink to your heartbeat!
     pinMode(fadePin,OUTPUT);          // pin that will fade to your heartbeat!
@@ -202,7 +213,7 @@
     //   analogReference(EXTERNAL);
   } //end of setup()
 
-  //IN THE LOOP, ADD THE CODE THAT WILL DO THE 2mS TIMING, AND CALL THE getPulse() routine.
+  //IN THE LOOP, ADD THE CODE THAT WILL DO THE 2mS TIMING, AND CALL THE getPulse() FUNCTION.
   void loop(){
 
     serialOutput() ;
@@ -218,13 +229,17 @@
                        // Quantified Self "QS" true when arduino finds a heartbeat
         fadeRate = 255;         // Makes the LED Fade Effect Happen
                                 // Set 'fadeRate' Variable to 255 to fade LED with pulse
+        fadeTime = millis();    // Set the fade timer to fade the LED
         serialOutputWhenBeatHappens();   // A Beat Happened, Output that to serial.
         QS = false;                      // reset the Quantified Self flag for next time
   }
-
-  ledFadeToBeat();                      // Makes the LED Fade Effect Happen
-  delay(20);                             //  take a break
-}
+  
+  if(millis() - fadeTime > 20){
+    fadeTime = millis();
+    ledFadeToBeat();                      // Makes the LED Fade Effect Happen
+    }
+    
+} // end of loop
 
 
 
