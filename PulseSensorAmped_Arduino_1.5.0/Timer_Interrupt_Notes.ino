@@ -147,11 +147,11 @@
 
       ISR(TIMER1_COMPA_vect)
   ******************************************************************************************
-  ADAFRUIT Gemma, ADAFRUIT Trinket (or any other board with ATtiny85 running at 8MHz)
+  ADAFRUIT Gemma, ADAFRUIT Trinket 8MHz, Digispark Pro 8MHz, (or any other board with ATtiny85 running at 8MHz)
 
     NOTE: Gemma does not do serial communication! Comment out or remove the Serial code in the Arduino sketch!
     
-    NOTE: You must use Software Serial with the Trinket! 
+    NOTE: You must use Software Serial with the Trinket or Digispark! 
           A the top of the main code page put these lines
           
             #define rxPin 3
@@ -181,11 +181,11 @@
       ISR(TIMER1_COMPA_vect)
 
   ******************************************************************************************
-  ADAFRUIT Trinket with 16MHz software setting (or any other board with ATtiny85 running at 16MHz)
+  ADAFRUIT Trinket with 16MHz software setting, Digispark Pro 16MHz, (or any other board with ATtiny85 running at 16MHz)
 
     NOTE: Use analog pin 2 for the Pulse Sensor purple wire.
     
-    NOTE: You must use Software Serial with the Trinket! 
+    NOTE: You must use Software Serial with the Trinket or Digispark! 
           A the top of the main code page put these lines
           
             #define rxPin 3
