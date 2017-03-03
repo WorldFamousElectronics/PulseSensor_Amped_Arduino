@@ -147,10 +147,10 @@
 
       ISR(TIMER1_COMPA_vect)
   ******************************************************************************************
-  ADAFRUIT Gemma (or any other board with ATtiny85 running at 8MHz)
+  ADAFRUIT Gemma, ADAFRUIT Trinket (or any other board with ATtiny85 running at 8MHz)
 
-    NOTE: Gemma does not do serial communication!
-          Comment out or remove the Serial code in the Arduino sketch!
+    NOTE: Gemma does not do serial communication! Comment out or remove the Serial code in the Arduino sketch!
+    NOTE: Use pin 2 to connect the Pulse Sensor Purple Pin on Trinket and Gemma!
 
   Timer1
 
@@ -168,7 +168,27 @@
 
       ISR(TIMER1_COMPA_vect)
 
+  ******************************************************************************************
+  ADAFRUIT Trinket with 16MHz software setting (or any other board with ATtiny85 running at 16MHz)
 
+    NOTE: Use analog pin 2 for the Pulse Sensor purple wire.
+
+  Timer1
+
+    Use of Timer1 breaks PWM output on pin D1
+
+      void interruptSetup(){
+        TCCR1 = 0x89;      // Clear Timer on Compare, Set Prescaler to 256
+        GTCCR &= 0x81;     // Disable PWM, don't connect pins to events
+        OCR1C = 0x7C;      // Set the top of the count to  124
+        OCR1A = 0x7C;      // Set the timer to interrupt after counting to 124
+        bitSet(TIMSK,6);   // Enable interrupt on match between TCNT1 and OCR1A
+        sei();             // Enable global interrupts
+      }
+    The only other thing you will need is the correct ISR vector in the next step.
+
+      ISR(TIMER1_COMPA_vect)
+      
   ******************************************************************************************
 
   IF YOU DON'T SEE THE MICROCONTROLLER YOU ARE USING, BUT YOU WANT A QUICK AND DIRTY SOLUTION
