@@ -150,6 +150,18 @@
   ADAFRUIT Gemma, ADAFRUIT Trinket (or any other board with ATtiny85 running at 8MHz)
 
     NOTE: Gemma does not do serial communication! Comment out or remove the Serial code in the Arduino sketch!
+    
+    NOTE: You must use Software Serial with the Trinket! 
+          A the top of the main code page put these lines
+          
+            #define rxPin 3
+            #define txPin 4
+            SoftwareSerial uart(rxPin, txPin);
+
+          Then, whenever the word 'Serial' is used, replace it with 'uart'
+            example:
+              change Serial.begin(115200); to uart.begin(57600);
+            
     NOTE: Use pin 2 to connect the Pulse Sensor Purple Pin on Trinket and Gemma!
 
   Timer1
@@ -172,6 +184,17 @@
   ADAFRUIT Trinket with 16MHz software setting (or any other board with ATtiny85 running at 16MHz)
 
     NOTE: Use analog pin 2 for the Pulse Sensor purple wire.
+    
+    NOTE: You must use Software Serial with the Trinket! 
+          A the top of the main code page put these lines
+          
+            #define rxPin 3
+            #define txPin 4
+            SoftwareSerial uart(rxPin, txPin);
+
+          Then, whenever the word 'Serial' is used, replace it with 'uart'
+            example:
+              change Serial.begin(115200); to uart.begin(57600);
 
   Timer1
 
