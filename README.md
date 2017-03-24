@@ -86,5 +86,5 @@ TIMER2            |  3 AND 11
 
 It's important to protect the Pulse Sensor from the oils and sweat that your fingertips and earlobes and other body parts make. That stuff can adversely affect the signal quality. Also, it's important to protect **you** from the electricity that makes the Pulse Sensor work! To this end, we have provided clear vinyl stickers that fit perfectly on the face of the Pulse Sensor. Peel one off, and press it firmly on the **front** side of your Pulse Sensor.
 ![Stick](pics/stick.jpg)
-![Picture](pics/earclip.jpg)
 ![Picture](pics/finger.jpg)
+![Picture](pics/earclip.jpg)
