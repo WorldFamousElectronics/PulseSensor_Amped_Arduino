@@ -85,12 +85,6 @@ TIMER2            |  3 AND 11
 ## Pulse Sensor Preparation [ Garbage In ~ Garbage Out ]
 
 It's important to protect the Pulse Sensor from the oils and sweat that your fingertips and earlobes and other body parts make. That stuff can adversely affect the signal quality. Also, it's important to protect **you** from the electricity that makes the Pulse Sensor work! To this end, we have provided clear vinyl stickers that fit perfectly on the face of the Pulse Sensor. Peel one off, and press it firmly on the **front** side of your Pulse Sensor.
-
-![Peel](pics/peel.png)
-
 ![Stick](pics/stick.jpg)
-
-
-## Ear-Clip or Finger-Strap Config
 ![Picture](pics/earclip.jpg)
 ![Picture](pics/finger.jpg)
