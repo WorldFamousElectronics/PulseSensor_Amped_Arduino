@@ -89,7 +89,8 @@ It's important to protect the Pulse Sensor from the oils and sweat that your fin
 ![Picture](pics/earclip.jpg)
 
 ## Troubleshooting
-Easy and Fast Way to Check your Pulse Sensor Raw Signal
+Having trouble making heads or tails of what is wrong.  Make sure that you are getting an strong PulseSensor signal with this project:
 <a href="https://github.com/WorldFamousElectronics/PulseSensorStarterProject">WorldFamousElectronics/PulseSensorStarterProject</a> 
-https://github.com/WorldFamousElectronics/PulseSensorStarterProject
+
+
 [![Alt text](https://github.com/WorldFamousElectronics/PulseSensorStarterProject/blob/master/video-play.png)](https://www.youtube.com/watch?v=82T_zBZQkOE)
