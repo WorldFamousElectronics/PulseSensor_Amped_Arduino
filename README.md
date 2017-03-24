@@ -1,6 +1,6 @@
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
 
-## Pulse Sensor Arduino Code
+## Getting Advanced / Pulse Sensor Arduino Code
 * Blinks LED on Pin 13 to a User's Live Heartbeat.   
 * "Fancy Fade Blink" an LED on Pin 5, to a User's Live HeartBeat.
 * Calculates User's BPM, Beat-Per-Minute. 
