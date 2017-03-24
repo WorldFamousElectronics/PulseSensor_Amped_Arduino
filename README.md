@@ -92,4 +92,4 @@ It's important to protect the Pulse Sensor from the oils and sweat that your fin
 Easy and Fast Way to Check your Pulse Sensor Raw Signal
 <a href="https://github.com/WorldFamousElectronics/PulseSensorStarterProject">WorldFamousElectronics/PulseSensorStarterProject</a> 
 https://github.com/WorldFamousElectronics/PulseSensorStarterProject
-[![Alt text](video-play.png)](https://www.youtube.com/watch?v=82T_zBZQkOE)
+[![Alt text](https://github.com/WorldFamousElectronics/PulseSensorStarterProject/blob/master/video-play.png)](https://www.youtube.com/watch?v=82T_zBZQkOE)
