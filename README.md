@@ -6,6 +6,7 @@
 * Calculates User's BPM, Beat-Per-Minute. 
 * Calculates User's IBI, the Interval Between Beats.  
 * Serial.print's the Signal, BPM, and IBI.  Use this output for our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer">Processing Visualizer App</a> , our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> Pulse Sensor Mac App</a>, or your project!  
+* Tech Note:  Employ's Arduino's Interrupt, to keep "time", and calculate BPM and IBI.
 
 
 ## Screen Shot
