@@ -69,13 +69,13 @@ Now, when you run the Serial Plotter, you will see a **blue** pulse waveform onl
 
 ![plot pulse only](pics/plot-of-pulse-only.png)
 
-## Timer Interrupt Notes
+## Timer Interrupt Notes or "Why Do Some of PWM Pins Not Work ???"
 There is a tab in the Arduino code called `Timer_Interrupt_Notes`. This page describes how to set up the timed interrupt depending on which hardware you are using, and what other things you may want to do with your sketch. We are using a hardware timer on the micrcontroller to make sure that our Pulse Sensor samples are taken at a consistent rate. That makes our data extra scientific! Please read it carefully!
 
 PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
 
 
-## Pulse Sensor Preparation
+## Pulse Sensor Preparation [ Garbage In ~ Garbage Out ]
 
 It's important to protect the Pulse Sensor from the oils and sweat that your fingertips and earlobes and other body parts make. That stuff can adversely affect the signal quality. Also, it's important to protect **you** from the electricity that makes the Pulse Sensor work! To this end, we have provided clear vinyl stickers that fit perfectly on the face of the Pulse Sensor. Peel one off, and press it firmly on the **front** side of your Pulse Sensor.
 
