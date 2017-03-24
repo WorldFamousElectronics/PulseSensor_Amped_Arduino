@@ -5,7 +5,7 @@
 * "Fancy Fade Blink" an LED on Pin 5, to a User's Live HeartBeat.
 * Calculates User's BPM, Beat-Per-Minute. 
 * Calculates User's IBI, the Interval Between Beats.  
-* Prints Everything to Serial, so that Beats, BPM, and IBI can be sent to to our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer">Processing Visualizer App</a> , our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> Pulse Sensor Mac App</a>, or your project!  
+* Serial.print's the Signal, BPM, and IBI.  Use this output for our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer">Processing Visualizer App</a> , our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> Pulse Sensor Mac App</a>, or your project!  
 
 
 ## Screen Shot
