@@ -1,6 +1,6 @@
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
 
-## Getting Advanced Code / / <a href="http://www.pulsesensor.com">PulseSensor</a>  & <a href="http://arduino.cc/"> "Arduino"</a> 
+## Getting Advanced Code / <a href="http://www.pulsesensor.com">PulseSensor</a>  & <a href="http://arduino.cc/"> "Arduino"</a> 
 * Blinks LED on Pin 13 to a User's Live Heartbeat.   
 * "Fancy Fade Blink" an LED on Pin 5, to a User's Live HeartBeat.
 * Calculates User's BPM, Beat-Per-Minute. 
