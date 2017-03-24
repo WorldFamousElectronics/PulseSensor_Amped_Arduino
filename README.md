@@ -90,7 +90,7 @@ It's important to protect the Pulse Sensor from the oils and sweat that your fin
 
 ## Troubleshooting
 Having trouble making heads or tails of what is wrong?  
-Check your raw sigal with this project:
+Check your raw signal with this project:
 <a href="https://github.com/WorldFamousElectronics/PulseSensorStarterProject">WorldFamousElectronics/PulseSensorStarterProject</a> 
 
 
