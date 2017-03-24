@@ -1,10 +1,12 @@
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
 
 ## Pulse Sensor Arduino Code
-1. Blinks an LED to User's Live Heartbeat   
-2. Fades an LED to User's Live HeartBeat
-3. Determines BPM
-4. Prints All of the Above to Serial
+* Blinks LED on Pin 13 to a User's Live Heartbeat.   
+* "Fancy Fade Blink" an LED on Pin 5, to a User's Live HeartBeat.
+* Calculates BPM, Beat-Per-Minute. 
+* Calculates IBI, the Interval Between Beats. 
+* Prints Everything to Serial, so the Arduino [and PulseSensor] can talk to our * Our Processing Sketch <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a> App, our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>, or your project!  
+
 
 ## Screen Shot
 ![ScreenShot](pics/ScreenCapArduino.png) 
