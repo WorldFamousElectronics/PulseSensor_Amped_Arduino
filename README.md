@@ -73,8 +73,8 @@ Now, when you run the Serial Plotter, you will see a **blue** pulse waveform onl
 There is a tab in the Arduino code called `Timer_Interrupt_Notes`. This page describes how to set up the timed interrupt depending on which hardware you are using, and what other things you may want to do with your sketch. We are using a hardware timer on the micrcontroller to make sure that our Pulse Sensor samples are taken at a consistent rate. That makes our data extra scientific! Please read it carefully!
 
 PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
+🤷‍♂️🤷‍♀️  
 
-## Timer Interrupts PWM Also 🤷‍♂️🤷‍♀️  
 Interrupt Setting | DISABLES PWM ON DIGITAL PINS 
 ----------------- | -------------
 TIMER1            |  3 AND 11  
