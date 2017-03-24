@@ -74,6 +74,13 @@ There is a tab in the Arduino code called `Timer_Interrupt_Notes`. This page des
 
 PWM on pins 3 and 11 will not work when using this code, because we are using Timer 2!
 
+## Timer Interrupts PWM Also 🤷‍♂️🤷‍♀️  
+Interrupt Setting | DISABLES PWM ON DIGITAL PINS 
+----------------- | -------------
+TIMER1            |  3 AND 11  
+
+
+
 
 ## Pulse Sensor Preparation [ Garbage In ~ Garbage Out ]
 
