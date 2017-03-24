@@ -33,12 +33,7 @@ PURPLE        | A0 (Analog Pin Zero)
 ![cablehookup](pics/cablehookup.png)
 
 
-## Ear-Clip or Finger-Strap Config
-![Picture](pics/earclip.jpg)
-![Picture](pics/finger.jpg)
-
-
-##Variables to Note
+## Variables to Note
 Variable Name     | What it does
 ------------------| -------------
 Signal            | **Int** that holds raw Analog Input data on **Pin 0**, the Pulse Sensor's **Purple Cable**. It's updated every 2mS
@@ -89,6 +84,6 @@ It's important to protect the Pulse Sensor from the oils and sweat that your fin
 ![Stick](pics/stick.jpg)
 
 
-
-## The Video
-<a href="https://vimeo.com/123008578"> "The Pulse Sensor in 60 Seconds"</a>
+## Ear-Clip or Finger-Strap Config
+![Picture](pics/earclip.jpg)
+![Picture](pics/finger.jpg)
