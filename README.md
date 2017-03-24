@@ -5,7 +5,7 @@
 * "Fancy Fade Blink" an LED on Pin 5, to a User's Live HeartBeat.
 * Calculates BPM, Beat-Per-Minute. 
 * Calculates IBI, the Interval Between Beats. 
-* Prints Everything to Serial, so the Arduino [and PulseSensor] can talk to our * Our Processing Sketch <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer"> "Processing Visualizer"</a> App, our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>, or your project!  
+* Prints Everything to Serial, so the Arduino [and PulseSensor] can talk to our <a href="https://github.com/WorldFamousElectronics/PulseSensor_Amped_Processing_Visualizer">Processing App</a> and our <a href="https://itunes.apple.com/us/app/pulse-sensor/id974284569?ls=1&mt=12"> "Pulse Sensor Mac App"</a>, or your project!  
 
 
 ## Screen Shot
