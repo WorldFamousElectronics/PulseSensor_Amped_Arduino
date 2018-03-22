@@ -1,3 +1,7 @@
+# This code has been superceeded
+# Please ues our new [PulseSensor Playground Library](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
+
+
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
 
 ## Getting Advanced Code / <a href="http://www.pulsesensor.com">PulseSensor</a>  & <a href="http://arduino.cc/"> "Arduino"</a> 
