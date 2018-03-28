@@ -1,5 +1,5 @@
-# This code has been superceeded
-# Please ues our new [PulseSensor Playground Library](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
+# This code has been superseded
+# Please use our new [PulseSensor Playground Library](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
 
 
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
