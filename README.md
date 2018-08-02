@@ -98,4 +98,4 @@ Check your raw signal with this project:
 <a href="https://github.com/WorldFamousElectronics/PulseSensorStarterProject">WorldFamousElectronics/PulseSensorStarterProject</a> 
 
 
-[![Alt text](https://github.com/WorldFamousElectronics/PulseSensorStarterProject/blob/master/video-play.png)](https://www.youtube.com/watch?v=82T_zBZQkOE)
+[![Alt text](https://github.com/WorldFamousElectronics/PulseSensorStarterProject/blob/master/video-play.png)](https://youtu.be/RbB8NSRa5X4)
