@@ -1,5 +1,16 @@
-# This code has been superseded
-# Please use our new [PulseSensor Playground Library](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
+# Retired repository — read-only archive
+
+This repository was retired on August 16, 2026. Its historical code, issues,
+and pull requests are preserved for reference, but it no longer receives fixes
+or support.
+
+Use the maintained
+[PulseSensor Playground Library](https://github.com/WorldFamousElectronics/PulseSensorPlayground)
+for current Arduino installation, examples, board support, and source code. If
+a problem is reproducible with the current Playground release, open a new
+[PulseSensorPlayground issue](https://github.com/WorldFamousElectronics/PulseSensorPlayground/issues)
+with the board and core versions, library version, wiring and supply voltage,
+raw waveform, and a minimal sketch.
 
 
 ![logo](https://avatars0.githubusercontent.com/u/7002937?v=3&s=200)
